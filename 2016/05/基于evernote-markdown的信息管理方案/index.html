@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        基于Evernote &#43; Markdown的个人信息管理方案 - 愿有岁月可回首
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="基于Evernote &#43; Markdown构建的信息管理方案，一站式替代 Office、WPS、Blog……" />
+    <meta name="generator" content="Hugo 0.91.2 with theme pure" />
+    <title>基于Evernote &#43; Markdown的个人信息管理方案 - 愿有岁月可回首</title>
+    
+    
+    <link rel="stylesheet" href="https://baresi48.github.io/css/style.min.e64d754037c0ee0ec4e20ab1d6f07740ace61729bc03850559b8caa21ae4a597.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="基于Evernote &#43; Markdown的个人信息管理方案" />
+<meta property="og:description" content="基于Evernote &#43; Markdown构建的信息管理方案，一站式替代 Office、WPS、Blog……" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://baresi48.github.io/2016/05/%E5%9F%BA%E4%BA%8Eevernote-markdown%E7%9A%84%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2016-05-24T23:11:13+08:00" />
+<meta property="article:modified_time" content="2016-05-24T23:11:13+08:00" />
+
+<meta itemprop="name" content="基于Evernote &#43; Markdown的个人信息管理方案">
+<meta itemprop="description" content="基于Evernote &#43; Markdown构建的信息管理方案，一站式替代 Office、WPS、Blog……"><meta itemprop="datePublished" content="2016-05-24T23:11:13+08:00" />
+<meta itemprop="dateModified" content="2016-05-24T23:11:13+08:00" />
+<meta itemprop="wordCount" content="2491">
+<meta itemprop="keywords" content="Markdown," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="基于Evernote &#43; Markdown的个人信息管理方案"/>
+<meta name="twitter:description" content="基于Evernote &#43; Markdown构建的信息管理方案，一站式替代 Office、WPS、Blog……"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/baresi48" target="_blank">
+            <img class="img-circle img-rotate" src="https://baresi48.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">HuaZhen</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">躺平的老年程序员</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Wuxi, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="https://baresi48.github.io/tags/code/" class="tag-list-link" rel="1">code<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/development/" class="tag-list-link" rel="1">development<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/geography/" class="tag-list-link" rel="2">geography<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/history/" class="tag-list-link" rel="2">history<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/journey/" class="tag-list-link" rel="2">journey<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/kindle/" class="tag-list-link" rel="1">kindle<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/linux/" class="tag-list-link" rel="3">linux<span
+               class="tag-list-count">3</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/markdown/" class="tag-list-link" rel="5">markdown<span
+               class="tag-list-count">5</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/mine/" class="tag-list-link" rel="4">mine<span
+               class="tag-list-count">4</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/news/" class="tag-list-link" rel="1">news<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/pic/" class="tag-list-link" rel="1">pic<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/python/" class="tag-list-link" rel="1">python<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/society/" class="tag-list-link" rel="2">society<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/web/" class="tag-list-link" rel="5">web<span
+               class="tag-list-count">5</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/%E7%AE%97%E6%B3%95/" class="tag-list-link" rel="1">算法<span
+               class="tag-list-count">1</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  8 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/mine-notes/" class="category-list-link">mine-notes</a><span class="category-list-count">4</span></li>
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/reading-notes/" class="category-list-link">reading-notes</a><span class="category-list-count">11</span></li>
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/study-notes/" class="category-list-link">study-notes</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/work-notes/" class="category-list-link">work-notes</a><span class="category-list-count">4</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/code/" class="tag-list-link">code</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/development/" class="tag-list-link">development</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/geography/" class="tag-list-link">geography</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/history/" class="tag-list-link">history</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/journey/" class="tag-list-link">journey</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/kindle/" class="tag-list-link">kindle</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/linux/" class="tag-list-link">linux</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/mine/" class="tag-list-link">mine</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/news/" class="tag-list-link">news</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/pic/" class="tag-list-link">pic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/python/" class="tag-list-link">python</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/society/" class="tag-list-link">society</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/web/" class="tag-list-link">web</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/%E7%AE%97%E6%B3%95/" class="tag-list-link">算法</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2020/06/%E5%BD%A9%E8%99%B9%E8%A1%A8%E7%AC%94%E8%AE%B0/" class="title">彩虹表笔记（填坑记录）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-15 10:20:00 &#43;0800 CST" itemprop="datePublished">2020-06-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8B-%E5%8D%97%E7%96%86/" class="title">2017新疆游记（下 南疆）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-03-01 23:58:00 &#43;0800 CST" itemprop="datePublished">2020-03-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8A-%E5%8C%97%E7%96%86/" class="title">2017新疆游记（上 北疆）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-03-01 23:18:00 &#43;0800 CST" itemprop="datePublished">2020-03-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2019/08/2019%E5%B9%B4%E4%B8%83%E5%A4%95%E7%85%A7%E7%89%87%E6%8B%BC%E5%9B%BE/" class="title">2019年七夕：照片拼图</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-08-12 12:47:00 &#43;0800 CST" itemprop="datePublished">2019-08-12</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2019/08/python%E8%BD%AC%E6%8D%A2%E6%B1%89%E5%AD%97%E4%B8%BA%E6%8B%BC%E5%9B%BE/" class="title">Python: 转换汉字为拼图</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-08-12 11:01:00 &#43;0800 CST" itemprop="datePublished">2019-08-12</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2016/05/%E5%9F%BA%E4%BA%8Eevernote-markdown%E7%9A%84%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/"
+    >基于Evernote &#43; Markdown的个人信息管理方案</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://baresi48.github.io/2016/05/%E5%9F%BA%E4%BA%8Eevernote-markdown%E7%9A%84%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/" class="article-date">
+  <time datetime="2016-05-24 23:11:13 &#43;0800 CST" itemprop="datePublished">2016-05-24</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/work-notes/"> Work Notes </a>
+  <a class="article-category-link" href="/categories/study-notes/"> Study Notes </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/markdown/"> Markdown </a>
+  </span>
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2491字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="基于evernote--markdown的个人信息管理方案">基于Evernote + Markdown的个人信息管理方案</h1>
+<h2 id="0-需求分析">0 需求分析</h2>
+<h3 id="01-日常需求">0.1 日常需求</h3>
+<p>自己的日常信息或笔记主要有这么几类：</p>
+<ul>
+<li>工作记录、工作文档</li>
+<li>读书笔记、摘抄</li>
+<li>学习笔记</li>
+<li>各种信息记录，大到自己的零花钱记账、小到网上看到的CPU评测</li>
+</ul>
+<h3 id="02-原有状况">0.2 原有状况</h3>
+<p>原本的工具主要是：</p>
+<ul>
+<li><strong><a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a></strong>： 解决绝大部分工作或私人的笔记、记录、摘抄；优点在于云端同步，但是需要分享或者递送就不行，格式上也存在很多限制</li>
+<li><strong>WPS Office(Word\PPT\Excel)、 MS Visio</strong>：工作文件，功能肯定没问题，但是臃肿庞大</li>
+<li>其它零散工具（场景）：日志发布在QQ空间、内网分享文件靠QQ或邮件、办公笔记本跟家里台机之间的Bt sync同步、等等</li>
+</ul>
+<p>原有方案的核心问题：</p>
+<ul>
+<li><a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a> 以外的软件都很大很臃肿，且大部分为收费软件</li>
+<li>MS office 格式文件编写的时候，很多时间和精力会分散在格式排版上而非内容本身</li>
+<li>不便于版本管理，历史版本往往只能在硬盘里留一份拷贝来备查</li>
+<li>信息分散：有文件、有知识库、有网络工具……无法统一备份、管理与查询</li>
+</ul>
+<h3 id="03-evernote-是核心但不是本文重点">0.3 Evernote 是核心但不是本文重点</h3>
+<p>知识库管理必然以 <a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a> 为核心，但是关于 <a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a> 的介绍起码能写本书，比如《Evernote 超效率数字笔记》：</p>
+<blockquote>
+<p><a href="https://yunpan.cn/cSBcxLsABiD3y">https://yunpan.cn/cSBcxLsABiD3y</a>   访问密码 b946</p>
+</blockquote>
+<h3 id="04-为什么要用-markdown">0.4 为什么要用 Markdown</h3>
+<p>考虑在Evernote的基础上加入Markdown作为解决方案，主要基于 Markdown 大量的优势：</p>
+<ol>
+<li>本质为 txt 纯文本
+<ol>
+<li>轻量、简洁</li>
+<li>任何文本编辑器都能打开编辑查看</li>
+<li>便于历史版本管理，不需要电脑里存一堆后面跟着V1、V2……的同名文件</li>
+<li>编写时只需要集中精力关注内容，无需关注格式与排版，各个编辑器自带css会渲染生成格式，不满意自定义即可</li>
+<li>跨平台支持极佳，OS X 貌似目前支持的最好, Linux/Win 也不差</li>
+</ol>
+</li>
+<li>Markdown 格式具备广泛的兼容性与可扩展性，适用各种分享或协作场景
+<ol>
+<li>可导出生成： Doc、Pdf、Html、slideshow（幻灯片）、Jpg、Latex、Blog、Wiki、电子书（mobi、Epub）等等各种想得到想不到用得上用不上的文件格式；</li>
+<li>虽然是文本格式，但是语法却支持内嵌目录导航、待办事项列表、图片、表格、数学公式、流程图、甘特图等等各种常用富文本内容</li>
+<li><a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a>、Chrome、GitHub、SublimeText、Atom等各路大佬的兼容与支持，<a href="www.jianshu.com" title="简书">简书</a> 、 <a href="https://maxiang.io/" title="马克飞象">马克飞象</a>等一系列小众但出色的平台或工具</li>
+<li>让人眼花缭乱选择困难的各种md编辑器，各种或强大或奇特的功能支撑，比如写书的可以用 GitBook，写论文的有 Scrivener，而MarkEditor支持直接发布Markdown格式文章到微信……</li>
+</ol>
+</li>
+<li>Markdown 被称为最适合程序员的书写工具，越来越多的软件的帮助文件采用md格式。所以就算单纯为了装X也得学一下啊，正好掩饰自己已经不会写代码的问题</li>
+</ol>
+<p>Markdown的介绍或者说教程网上随便搜一下就行，到处都是，这里简单链两个：</p>
+<ul>
+<li>
+<p><a href="http://www.jianshu.com/p/17fdcf17bbb4">Markdown：让书写更美好</a></p>
+</li>
+<li>
+<p><a href="http://toutiao.com/i6283461035823202818/">Markdown简明教程：码字效率飞升80%，不懂代码也能装</a></p>
+</li>
+</ul>
+<h2 id="1-核心工具">1 核心工具</h2>
+<ul>
+<li><strong>笔记工具： <a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a></strong>  知识库的核心</li>
+<li><strong>chrome插件： Markdown Here</strong>  万能的 web 用瑞士军刀，支持在web上的一切文本输入框里使用Markdown 语法，并可进行双向的格式转换</li>
+<li>web工具： <a href="http://dmscode.github.io/Wiki-in-box/" title="Wiki-in-box">wiki-in-box</a>、<a href="http://www.gohugo.io/" title="hugo">hugo</a></li>
+<li>幻灯片工具：Landslide</li>
+<li>万能的文件格式转化工具： <a href="http://www.pandoc.org" title="pandoc">Pandoc</a> （但是这个基本不用额外安装，很多都是软件里直接已经内置）</li>
+<li>md编辑器：
+<ul>
+<li><strong><a href="http://www.typora.io/" title="typora">typora</a></strong>：日常主力使用，界面清爽，有大纲视图，插入表格和图片都很方便，导出doc需自行额外安装 <a href="http://www.pandoc.org" title="pandoc">pandoc</a> 包，唯一缺陷不支持流程图（但愿后续版本改进）</li>
+<li>Sublime Text： 安装sublime server插件后，配合wiki-in-box使用</li>
+<li>MarkdownEditor： 开源免费、导出格式齐全、语法支持完整、不过不失、最佳万金油备胎</li>
+<li>MarkEditor：加入了文件管理，界面清爽，功能齐备，操作也许是为了兼顾MacOS显得有点别扭，另外有个大问题是收费软件，试用版会各种不爽</li>
+</ul>
+</li>
+</ul>
+<p>看起来不少，其实必须的也就是 <a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a> 、 Markdown Here、加上一个自己最喜欢的md编辑器这三大件即可。</p>
+<h2 id="2-私人笔记evernote--markdown-here">2 私人笔记：Evernote + Markdown Here</h2>
+<p><a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a> 目前还没有原生支持 Markdown 语法，虽然说已经加在开发团队的任务列表里了。不过看看隔壁的未知笔记、有道云笔记等等，大象这次的脚步着实慢了。  <a href="https://maxiang.io/" title="马克飞象">马克飞象</a> 就是为了给 <a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a> 外挂 Markdown 语法支持的第三方应用，不过因为是收费应用所以我没怎么用过……</p>
+<p>实际上，这个问题可以用万能的 Markdown Here 插件来解决，怎么在Chrome里装这个插件就不提了，无非就是科学上网哪些事。</p>
+<ol>
+<li>在 Chrome 里打开 <a href="https://www.yinxiang.com/" title="印象笔记">Evernote</a> 的 web 页面，新建笔记</li>
+<li>按照 Markdown 语法，输入想写的东西（比如本文）</li>
+<li>在编辑区域鼠标右击，选择“<strong>Markdown转换</strong>”</li>
+</ol>
+<p><img src="https://baresi.bitbucket.io/img/markdown-here1.jpg" alt=""></p>
+<p>转换后的效果在客户端同步后看起来也是一样的，如果需要转换回来继续编辑，同样的方式重复操作一次即可。</p>
+<p><img src="https://baresi.bitbucket.io/img/markdown-here2.jpg" alt=""></p>
+<p>用这样的方式，几乎可以在任何的 web 输入区域使用 Markdown 语法，比如 Gmail 等各种 web 邮箱，比如 <a href="http://user.qzone.qq.com/3464046/" title="QQ空间">QQ空间</a> 。</p>
+<h2 id="3-公司文件wordpdf导出--内网web共享">3 公司文件：Word/PDF导出 + 内网web共享</h2>
+<h3 id="31-wordpdf导出">3.1 Word/PDF导出</h3>
+<p>这个主要依赖md编辑器，用 MarkdownEditor 或 Typora 均可，导出其它格式也一样，点击相应菜单项即可（或许有快捷键，还未研究）。</p>
+<p>1 MarkdownEditor 导出功能：</p>
+<p><img src="https://baresi.bitbucket.io/img/MarkdownEditor-export.jpg" alt=""></p>
+<p>2 Typora 导出功能：</p>
+<p><img src="https://baresi.bitbucket.io/img/Typora-export.jpg" alt=""></p>
+<h3 id="32-内网web共享">3.2 内网web共享</h3>
+<p>这个是依赖 <a href="http://dmscode.github.io/Wiki-in-box/" title="Wiki-in-box">wiki-in-box</a> 实现的，足够轻量，随时开关，主要用来记会议记录或者工作列表。有兴趣的直接上  <a href="http://dmscode.github.io/Wiki-in-box/" title="Wiki-in-box">wiki-in-box</a> 主页看下即可，三分钟包教包会。</p>
+<h2 id="4-读书笔记学习笔记-hugo">4 读书笔记/学习笔记： hugo</h2>
+<p>参见：</p>
+<ul>
+<li><a href="http://baresi.bitbucket.org/2016/05/17/%E4%BD%BF%E7%94%A8-bitbucket--hugo-%E6%9E%84%E5%BB%BA%E5%85%8D%E8%B4%B9-blog/">使用 BitBucket + Hugo 构建免费 Blog</a></li>
+<li><a href="http://baresi.bitbucket.org/2016/05/17/hugo-tips/">Hugo Tips</a></li>
+<li>实际上我现在在 hugo 里发布后，往往还把 md 源代码复制一份贴到 <a href="http://user.qzone.qq.com/3464046/" title="QQ空间">QQ空间</a> 里，然后运行一下 Markdown Here 。</li>
+</ul>
+<h2 id="5-最后的堡垒幻灯片ppt流程图visio">5 最后的堡垒：幻灯片（PPT）、流程图（Visio）</h2>
+<p>Markdown 在我工作中的使用，最后的堡垒就是幻灯片（PPT）、流程图（Visio）和脑图：</p>
+<ul>
+<li>目前脑图暂时无解，继续靠 <a href="http://naotu.baidu.com/">百度脑图</a> 顶着；</li>
+<li>幻灯片使用LandSlide代替PPT，不用于对外商务演示已经没问题；</li>
+<li>流程图语法略繁琐，但是简单取代 Visio 也未必不可能，尤其是在大段文字中嵌入流程图的时候，在别的文档里嵌入 visio 恐怕比 md 文件里嵌入一段 flow 代码麻烦的多，如果需要修改就更麻烦了。</li>
+</ul>
+<h3 id="51-幻灯片landslide">5.1 幻灯片:LandSlide</h3>
+<ul>
+<li>自己写的基于bash on win10的安装使用 tips : <a href="http://baresi.bitbucket.org/2016/05/24/landslide--bash-on-win10/">landslide @ bash on win10</a></li>
+<li>参考教程 ： <a href="http://www.jianshu.com/p/e063303317cb">用Markdown写一个极客范儿的PPT</a></li>
+</ul>
+<h3 id="52-流程图甘特图">5.2 流程图、甘特图</h3>
+<p>自己暂时还没完全研究透，只能说可行性论证没问题：</p>
+<ul>
+<li>
+<p><a href="http://blog.csdn.net/aizhaoyu/article/details/44350821">流程图教程</a></p>
+</li>
+<li>
+<p><a href="http://toutiao.com/i6283461035823202818/">甘特图教程</a></p>
+</li>
+</ul>
+<p>流程图样例</p>
+<p><img src="https://baresi.bitbucket.io/img/markdown-flow1.jpg" alt="流程图样例"></p>
+<p>甘特图样例</p>
+<p><img src="https://baresi.bitbucket.io/img/markdown-flow2.jpg" alt="甘特图样例"></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://baresi48.github.io/2016/05/%E5%9F%BA%E4%BA%8Eevernote-markdown%E7%9A%84%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/" title="基于Evernote &#43; Markdown的个人信息管理方案" target="_blank" rel="external">https://baresi48.github.io/2016/05/%E5%9F%BA%E4%BA%8Eevernote-markdown%E7%9A%84%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License: </strong>
+        <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/baresi48" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://baresi48.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/baresi48" target="_blank"><span class="text-dark">HuaZhen</span><small class="ml-1x">躺平的老年程序员</small></a></h3>
+        <div>愿有岁月可回首，且以深情共白头</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://baresi48.github.io/2016/05/landslide-bash-on-win10/" title=" landslide @ bash on win10 "><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://baresi48.github.io/2016/09/bash-on-win10-tips/"
+                    title=" Bash on win10 Tips"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/baresi48" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://baresi48.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2016  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://baresi48.github.io/js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="https://baresi48.github.io/js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/baresi48.github.io',
+            CONTENT_URL: 'https:\/\/baresi48.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://baresi48.github.io/js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

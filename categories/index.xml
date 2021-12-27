@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 愿有岁月可回首</title>
+    <link>https://baresi48.github.io/categories/</link>
+    <description>Recent content in Categories on 愿有岁月可回首</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>CC BY 4.0 CN</copyright>
+    <lastBuildDate>Mon, 15 Jun 2020 10:20:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://baresi48.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>彩虹表笔记（填坑记录）</title>
+      <link>https://baresi48.github.io/2020/06/%E5%BD%A9%E8%99%B9%E8%A1%A8%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 15 Jun 2020 10:20:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2020/06/%E5%BD%A9%E8%99%B9%E8%A1%A8%E7%AC%94%E8%AE%B0/</guid>
+      <description>彩虹表笔记（填坑记录） rt格式的文件大小要大于rti格式，但是解析速度要比rti快； CPU的性能是影响解析速度的主要因素； 内存决定单次读取的</description>
+    </item>
+    
+    <item>
+      <title>2017新疆游记（下 南疆）</title>
+      <link>https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8B-%E5%8D%97%E7%96%86/</link>
+      <pubDate>Sun, 01 Mar 2020 23:58:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8B-%E5%8D%97%E7%96%86/</guid>
+      <description>D7 独库公路-库车大峡谷-库车 本来，这是整个行程中，非常值得期待的一天。两孩子指望着独库公路玩雪，太座心心念念着大小龙池，而我则是向往库车大峡</description>
+    </item>
+    
+    <item>
+      <title>2017新疆游记（上 北疆）</title>
+      <link>https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8A-%E5%8C%97%E7%96%86/</link>
+      <pubDate>Sun, 01 Mar 2020 23:18:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8A-%E5%8C%97%E7%96%86/</guid>
+      <description>前言 2017的行程，但是因为懒，一直没去整理，最近心血来潮开始回忆与整理两年前的游记。先放结论： 新疆真大 新疆真美 带着两个孩子旅游真累 0.1 路线 核</description>
+    </item>
+    
+    <item>
+      <title>2019年七夕：照片拼图</title>
+      <link>https://baresi48.github.io/2019/08/2019%E5%B9%B4%E4%B8%83%E5%A4%95%E7%85%A7%E7%89%87%E6%8B%BC%E5%9B%BE/</link>
+      <pubDate>Mon, 12 Aug 2019 12:47:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2019/08/2019%E5%B9%B4%E4%B8%83%E5%A4%95%E7%85%A7%E7%89%87%E6%8B%BC%E5%9B%BE/</guid>
+      <description>2019年七夕：照片拼图</description>
+    </item>
+    
+    <item>
+      <title>Python: 转换汉字为拼图</title>
+      <link>https://baresi48.github.io/2019/08/python%E8%BD%AC%E6%8D%A2%E6%B1%89%E5%AD%97%E4%B8%BA%E6%8B%BC%E5%9B%BE/</link>
+      <pubDate>Mon, 12 Aug 2019 11:01:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2019/08/python%E8%BD%AC%E6%8D%A2%E6%B1%89%E5%AD%97%E4%B8%BA%E6%8B%BC%E5%9B%BE/</guid>
+      <description>代码 #!/usr/bin/python3 # coding=utf-8 __author__ = &#39;HuaZhen&#39; __date__ = &#39;2019/8/8&#39; # 中文转换16*16点阵（依赖HZK16汉字库） import binascii from PIL import Image import random import os KEYS = [0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01] #初始化16*16的点阵位置，</description>
+    </item>
+    
+    <item>
+      <title>换个方式记录2018</title>
+      <link>https://baresi48.github.io/2019/06/%E6%8D%A2%E4%B8%AA%E6%96%B9%E5%BC%8F%E8%AE%B0%E5%BD%952018/</link>
+      <pubDate>Fri, 07 Jun 2019 21:01:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2019/06/%E6%8D%A2%E4%B8%AA%E6%96%B9%E5%BC%8F%E8%AE%B0%E5%BD%952018/</guid>
+      <description>1 《月亮与六便士》 为了使灵魂安宁，一个人每天至少该做两件他不喜欢的事。说这话的，是个聪明人，对于这一点我始终严格遵守：每天我都早上起床，晚上</description>
+    </item>
+    
+    <item>
+      <title>换个方式记录2017</title>
+      <link>https://baresi48.github.io/2019/06/%E6%8D%A2%E4%B8%AA%E6%96%B9%E5%BC%8F%E8%AE%B0%E5%BD%952017/</link>
+      <pubDate>Fri, 07 Jun 2019 20:01:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2019/06/%E6%8D%A2%E4%B8%AA%E6%96%B9%E5%BC%8F%E8%AE%B0%E5%BD%952017/</guid>
+      <description>1 《蒋勋说宋词》 如果你把“落花人独立，微雨燕双飞”变成一支签放到庙里去，抽出这样签的人，他大概会想好久，然后庙里的住持也不会解答了。签一定要</description>
+    </item>
+    
+    <item>
+      <title>换个方式记录2016</title>
+      <link>https://baresi48.github.io/2019/06/%E6%8D%A2%E4%B8%AA%E6%96%B9%E5%BC%8F%E8%AE%B0%E5%BD%952016/</link>
+      <pubDate>Fri, 07 Jun 2019 19:58:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2019/06/%E6%8D%A2%E4%B8%AA%E6%96%B9%E5%BC%8F%E8%AE%B0%E5%BD%952016/</guid>
+      <description>1 《拔魔》 悲伤自有它迷人的一面，有时候甚至比喜悦的力量更加强大，没人能连续几天或几年保持笑容，却有许多人沉迷悲伤不可自拔。即使这种悲伤毫无来</description>
+    </item>
+    
+    <item>
+      <title> Git Tutorial </title>
+      <link>https://baresi48.github.io/2019/06/git-tutorial/</link>
+      <pubDate>Wed, 05 Jun 2019 23:15:18 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2019/06/git-tutorial/</guid>
+      <description>1 客户端安装 1.1 Windows TortoiseGit：大部分人都用过TortoiseSVN，同样它也有Git版，仅支持 Windows 系统 SourceTree：方便易用</description>
+    </item>
+    
+    <item>
+      <title> 升级 bash on win10 </title>
+      <link>https://baresi48.github.io/2017/12/%E5%8D%87%E7%BA%A7-bash-on-win10/</link>
+      <pubDate>Wed, 13 Dec 2017 22:18:13 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2017/12/%E5%8D%87%E7%BA%A7-bash-on-win10/</guid>
+      <description>通过命令行可以直接将 bash on win10 从14.04LTS 升级到 16.04LTS： cat /etc/issue #确认系统当前版本 sudo apt update sudo do-release-upgrade #版本更新</description>
+    </item>
+    
+    <item>
+      <title>【转贴】时空门后二十年</title>
+      <link>https://baresi48.github.io/2017/11/%E6%97%B6%E7%A9%BA%E9%97%A8%E5%90%8E%E4%BA%8C%E5%8D%81%E5%B9%B4/</link>
+      <pubDate>Thu, 23 Nov 2017 20:08:20 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2017/11/%E6%97%B6%E7%A9%BA%E9%97%A8%E5%90%8E%E4%BA%8C%E5%8D%81%E5%B9%B4/</guid>
+      <description>第一章 胡林是兰州国安部对内保防侦察局经济科的一名科员，当然表面上他的身份隶属于公安局经济犯罪调查科，在一处没有牌子，上世纪建成的大院里办公，</description>
+    </item>
+    
+    <item>
+      <title>Kindle “您已达到本内容的剪贴上限” 对策</title>
+      <link>https://baresi48.github.io/2017/09/kindle%E8%B6%85%E5%87%BA%E5%89%AA%E8%B4%B4%E4%B8%8A%E9%99%90%E7%9A%84%E5%AF%B9%E7%AD%96/</link>
+      <pubDate>Wed, 27 Sep 2017 16:18:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2017/09/kindle%E8%B6%85%E5%87%BA%E5%89%AA%E8%B4%B4%E4%B8%8A%E9%99%90%E7%9A%84%E5%AF%B9%E7%AD%96/</guid>
+      <description>一直用 KindleMate + Evernote 备份kindle 阅读的标注和笔记。结果，终于遇到了传说中的“您已达到本内容的剪贴上限”。 然后搜索了一圈，都没什么好的解决办法，要</description>
+    </item>
+    
+    <item>
+      <title>【转帖】《赘婿》于世道（by 愤怒的香蕉）</title>
+      <link>https://baresi48.github.io/2017/04/%E8%B5%98%E5%A9%BF%E4%BA%8E%E4%B8%96%E9%81%93/</link>
+      <pubDate>Thu, 13 Apr 2017 12:55:20 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2017/04/%E8%B5%98%E5%A9%BF%E4%BA%8E%E4%B8%96%E9%81%93/</guid>
+      <description>《赘婿》于世道——关于我为什么变成微博上最严肃的那个人的故事（by 愤怒的香蕉） 我有一个微博，新浪的，最初建立的时候不知道拿它来干嘛，反正有空</description>
+    </item>
+    
+    <item>
+      <title> Bash on win10 Tips</title>
+      <link>https://baresi48.github.io/2016/09/bash-on-win10-tips/</link>
+      <pubDate>Thu, 22 Sep 2016 14:05:18 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2016/09/bash-on-win10-tips/</guid>
+      <description>1 Bash on win10 setting 注： 不建议改官方的apt源，一开始习惯性加了国内的源，结果各种出错。后来把/etc/apt/sources.list改回默认文件就</description>
+    </item>
+    
+    <item>
+      <title>基于Evernote &#43; Markdown的个人信息管理方案</title>
+      <link>https://baresi48.github.io/2016/05/%E5%9F%BA%E4%BA%8Eevernote-markdown%E7%9A%84%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Tue, 24 May 2016 23:11:13 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2016/05/%E5%9F%BA%E4%BA%8Eevernote-markdown%E7%9A%84%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88/</guid>
+      <description>基于Evernote + Markdown的个人信息管理方案 0 需求分析 0.1 日常需求 自己的日常信息或笔记主要有这么几类： 工作记录、工作文档 读书笔记、</description>
+    </item>
+    
+    <item>
+      <title> landslide @ bash on win10 </title>
+      <link>https://baresi48.github.io/2016/05/landslide-bash-on-win10/</link>
+      <pubDate>Tue, 24 May 2016 22:59:13 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2016/05/landslide-bash-on-win10/</guid>
+      <description>1 bash on win10 注： 不建议改官方的apt源，一开始习惯性加了国内的源，结果各种出错。后来把/etc/apt/sources.list改回默认文件就又</description>
+    </item>
+    
+    <item>
+      <title>徐闻菠萝与行业金融服务</title>
+      <link>https://baresi48.github.io/2016/05/%E5%BE%90%E9%97%BB%E8%8F%A0%E8%90%9D%E4%B8%8E%E8%A1%8C%E4%B8%9A%E9%87%91%E8%9E%8D%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Thu, 19 May 2016 16:18:00 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2016/05/%E5%BE%90%E9%97%BB%E8%8F%A0%E8%90%9D%E4%B8%8E%E8%A1%8C%E4%B8%9A%E9%87%91%E8%9E%8D%E6%9C%8D%E5%8A%A1/</guid>
+      <description>假设目前的公开信息均为真，就事论事。 1 徐闻菠萝事件的评论要点整理 以下观点均为从阅读的各方评论中按照自己的理解总结出来的，带有明显的主观性，与</description>
+    </item>
+    
+    <item>
+      <title> Hugo Tips </title>
+      <link>https://baresi48.github.io/2016/05/hugo-tips/</link>
+      <pubDate>Tue, 17 May 2016 22:59:13 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2016/05/hugo-tips/</guid>
+      <description>设置disqus 其实很简单，hugo 文件夹根目录下的全局设定文件 config.toml 里设置 disqusShortname 即可 # Enable Disqus integration disqusShortname = &amp;quot;xxxxx&amp;quot; 只是这个 disqusShortname 其实指的不是disqus的账号名，而是</description>
+    </item>
+    
+    <item>
+      <title>使用 BitBucket &#43; Hugo 构建免费 Blog</title>
+      <link>https://baresi48.github.io/2016/05/hugo-bitbucket-blog/</link>
+      <pubDate>Tue, 17 May 2016 16:42:13 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2016/05/hugo-bitbucket-blog/</guid>
+      <description>前言 先发半成品： baresi.bitbucket.org 优点 ： 免费！ 免费！免费！ 简洁的个人二级域名； 可适当冒充 Geek ； 自带版本控制，历史版本不需要像wod一样丑陋的在文件名后加 V1\</description>
+    </item>
+    
+    <item>
+      <title>大国之路 《天下首富》</title>
+      <link>https://baresi48.github.io/2016/05/%E5%A4%A7%E5%9B%BD%E4%B9%8B%E8%B7%AF%E5%A4%A9%E4%B8%8B%E9%A6%96%E5%AF%8C/</link>
+      <pubDate>Mon, 16 May 2016 10:45:45 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2016/05/%E5%A4%A7%E5%9B%BD%E4%B9%8B%E8%B7%AF%E5%A4%A9%E4%B8%8B%E9%A6%96%E5%AF%8C/</guid>
+      <description>摘抄自《天下首富》 大国之路（中日丝绸） 第一节 功勋产业 前面的章节都是以“铁”为核心展开的。提到铁，不免想起刀光剑影，近代还会联想起坚船利炮这些</description>
+    </item>
+    
+  </channel>
+</rss>

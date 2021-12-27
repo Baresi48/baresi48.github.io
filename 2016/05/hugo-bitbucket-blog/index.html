@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        使用 BitBucket &#43; Hugo 构建免费 Blog - 愿有岁月可回首
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="先发半成品： baresi.bitbucket.org " />
+    <meta name="generator" content="Hugo 0.91.2 with theme pure" />
+    <title>使用 BitBucket &#43; Hugo 构建免费 Blog - 愿有岁月可回首</title>
+    
+    
+    <link rel="stylesheet" href="https://baresi48.github.io/css/style.min.e64d754037c0ee0ec4e20ab1d6f07740ace61729bc03850559b8caa21ae4a597.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="使用 BitBucket &#43; Hugo 构建免费 Blog" />
+<meta property="og:description" content="先发半成品： baresi.bitbucket.org " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://baresi48.github.io/2016/05/hugo-bitbucket-blog/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2016-05-17T16:42:13+08:00" />
+<meta property="article:modified_time" content="2016-05-17T16:42:13+08:00" />
+
+<meta itemprop="name" content="使用 BitBucket &#43; Hugo 构建免费 Blog">
+<meta itemprop="description" content="先发半成品： baresi.bitbucket.org "><meta itemprop="datePublished" content="2016-05-17T16:42:13+08:00" />
+<meta itemprop="dateModified" content="2016-05-17T16:42:13+08:00" />
+<meta itemprop="wordCount" content="1883">
+<meta itemprop="keywords" content="Web,Markdown," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="使用 BitBucket &#43; Hugo 构建免费 Blog"/>
+<meta name="twitter:description" content="先发半成品： baresi.bitbucket.org "/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/baresi48" target="_blank">
+            <img class="img-circle img-rotate" src="https://baresi48.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">HuaZhen</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">躺平的老年程序员</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Wuxi, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div id="tag-cloud-list" class="widget-body">
+            
+            
+            <a href="https://baresi48.github.io/tags/code/" class="tag-list-link" rel="1">code<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/development/" class="tag-list-link" rel="1">development<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/geography/" class="tag-list-link" rel="2">geography<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/history/" class="tag-list-link" rel="2">history<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/journey/" class="tag-list-link" rel="2">journey<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/kindle/" class="tag-list-link" rel="1">kindle<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/linux/" class="tag-list-link" rel="3">linux<span
+               class="tag-list-count">3</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/markdown/" class="tag-list-link" rel="5">markdown<span
+               class="tag-list-count">5</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/mine/" class="tag-list-link" rel="4">mine<span
+               class="tag-list-count">4</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/news/" class="tag-list-link" rel="1">news<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/pic/" class="tag-list-link" rel="1">pic<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/python/" class="tag-list-link" rel="1">python<span
+               class="tag-list-count">1</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/society/" class="tag-list-link" rel="2">society<span
+               class="tag-list-count">2</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/web/" class="tag-list-link" rel="5">web<span
+               class="tag-list-count">5</span></a>
+            
+            
+            <a href="https://baresi48.github.io/tags/%E7%AE%97%E6%B3%95/" class="tag-list-link" rel="1">算法<span
+               class="tag-list-count">1</span></a>
+            
+    </div>
+<script>
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    tagCloud('#tag-cloud-list a',  8 ,  20 );
+  }
+};
+
+function tagCloud(where, min, max) {
+  let iMax = 0;
+  let iMin = 0;
+  $(where).each(function() {
+    let weight = Number($(this).attr("rel"));
+    if(iMax < weight) iMax = weight;
+    if(iMin > weight || iMin == 0) iMin = weight;
+  });
+  let step = (max - min)/(iMax - iMin);
+  $(where).each(function() {
+    let weight = $(this).attr("rel") - iMin;
+    $(this).css({"font-size": min + (weight * step) + 'px'});
+  });
+};
+</script>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/mine-notes/" class="category-list-link">mine-notes</a><span class="category-list-count">4</span></li>
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/reading-notes/" class="category-list-link">reading-notes</a><span class="category-list-count">11</span></li>
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/study-notes/" class="category-list-link">study-notes</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://baresi48.github.io/categories/work-notes/" class="category-list-link">work-notes</a><span class="category-list-count">4</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/code/" class="tag-list-link">code</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/development/" class="tag-list-link">development</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/geography/" class="tag-list-link">geography</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/history/" class="tag-list-link">history</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/journey/" class="tag-list-link">journey</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/kindle/" class="tag-list-link">kindle</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/linux/" class="tag-list-link">linux</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/mine/" class="tag-list-link">mine</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/news/" class="tag-list-link">news</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/pic/" class="tag-list-link">pic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/python/" class="tag-list-link">python</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/society/" class="tag-list-link">society</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/web/" class="tag-list-link">web</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://baresi48.github.io/tags/%E7%AE%97%E6%B3%95/" class="tag-list-link">算法</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2020/06/%E5%BD%A9%E8%99%B9%E8%A1%A8%E7%AC%94%E8%AE%B0/" class="title">彩虹表笔记（填坑记录）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-15 10:20:00 &#43;0800 CST" itemprop="datePublished">2020-06-15</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8B-%E5%8D%97%E7%96%86/" class="title">2017新疆游记（下 南疆）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-03-01 23:58:00 &#43;0800 CST" itemprop="datePublished">2020-03-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2020/03/2017%E6%96%B0%E7%96%86%E6%B8%B8%E8%AE%B0%E4%B8%8A-%E5%8C%97%E7%96%86/" class="title">2017新疆游记（上 北疆）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-03-01 23:18:00 &#43;0800 CST" itemprop="datePublished">2020-03-01</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2019/08/2019%E5%B9%B4%E4%B8%83%E5%A4%95%E7%85%A7%E7%89%87%E6%8B%BC%E5%9B%BE/" class="title">2019年七夕：照片拼图</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-08-12 12:47:00 &#43;0800 CST" itemprop="datePublished">2019-08-12</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://baresi48.github.io/2019/08/python%E8%BD%AC%E6%8D%A2%E6%B1%89%E5%AD%97%E4%B8%BA%E6%8B%BC%E5%9B%BE/" class="title">Python: 转换汉字为拼图</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-08-12 11:01:00 &#43;0800 CST" itemprop="datePublished">2019-08-12</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2016/05/hugo-bitbucket-blog/"
+    >使用 BitBucket &#43; Hugo 构建免费 Blog</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://baresi48.github.io/2016/05/hugo-bitbucket-blog/" class="article-date">
+  <time datetime="2016-05-17 16:42:13 &#43;0800 CST" itemprop="datePublished">2016-05-17</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/study-notes/"> Study Notes </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/web/"> Web </a>
+    <a class="article-tag-link" href="/tags/markdown/"> Markdown </a>
+  </span>
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1883字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="前言">前言</h2>
+<p>先发半成品： <a href="http://baresi.bitbucket.org/">baresi.bitbucket.org</a></p>
+<p><strong>优点</strong> ：</p>
+<ol>
+<li>免费！ 免费！免费！</li>
+<li>简洁的个人二级域名；</li>
+<li>可适当冒充 Geek ；</li>
+<li>自带版本控制，历史版本不需要像wod一样丑陋的在文件名后加 V1\V1.1来标识了（我工作文档里有个PPT文件名上有V16我会乱说）</li>
+</ol>
+<h2 id="1-为什么要折腾这么个玩意">1 为什么要折腾这么个玩意？</h2>
+<h3 id="11--要啥blog-">1.1  要啥Blog ？</h3>
+<p>时不时总会心血来潮写点东西，一开始的MSN Space已经关了，后来短暂用段时间新浪博客后，因为平时QQ挂的多，很多东西就写了扔在QQ空间了。</p>
+<p>但是，自从发现有Markdown这个好东西后，下意识的觉得自己的知识（文件）管理体系从此可以大一统了。</p>
+<p>于是，需要一个支持Markdown语法的Blog的需求，立刻提上了议事日程。</p>
+<p>当然，覆盖这个需求最理想的方法，直接用 <a href="www.jianshu.com">简书</a> 就一了百了了：界面清爽简洁、功能该有的都有、支持Markdown、有手机APP……</p>
+<p>但是，架不住我最近比较闲，就是想折腾怎么办呢？ （当然，非要给  <a href="www.jianshu.com">简书</a>  挑刺，就是没有一个简洁域名的个人主页吧。）</p>
+<h3 id="12-为啥用-bitbucket-而不是-github">1.2 为啥用 BitBucket （而不是 GitHub？）</h3>
+<p>用 GitHub 写书写 Blog 写论文写……几乎已经成为了一种时尚，随手一搜各种教程也是漫天遍野，但是 GitHub 鼓励开源，免费账户是不能建私有仓库的。作为一个想保留点隐私的穷人，觉得还是功能基本类似的 BitBucket 更适合我。</p>
+<p>再说了，大家都用 GitHub ，小众的选择有时候更显逼格啊。</p>
+<h3 id="13-为啥用-hugo-而不是-jekyll-或-octopress-">1.3 为啥用 Hugo （而不是 jekyll 或 octopress ？）</h3>
+<ul>
+<li>必须支持Markdown；</li>
+<li>Hugo 最简洁，不需要什么依赖包，生成速度也最快；</li>
+<li>GitHub Pages 原生支持 jekyll ，因此用 jekyll 可以理解，但是用 BitBucket 的话，大家都在同一起跑线了</li>
+<li>不想再折腾 ruby 之类的环境（我是 python 粉）</li>
+</ul>
+<h2 id="2-构建流程">2 构建流程</h2>
+<h3 id="21--注册-bitbucket">2.1  注册 BitBucket</h3>
+<p><del>访问  <a href="https://bitbucket.org">bitbucket.org</a> ，填写用户名、邮箱和密码。</del></p>
+<p><img src="http://baresi.bitbucket.org/BitBucket/sign_up.png" alt="注册 BitBucket "></p>
+<p>发现有人家写好的了，比我自己原来的流程还多了设置中文，直接引用吧：</p>
+<ul>
+<li><a href="http://jloveu.bitbucket.org/2014/08/26/20140826-Blog_on_Bitbucket/">用Bitbucket搭建博客初探</a></li>
+</ul>
+<p><strong>假设注册与涉及信息如下（后面命令中会涉及到，自己根据自己的注册信息替换）</strong></p>
+<ul>
+<li>用户名：myblog</li>
+<li>仓库名：myblog.bitbucket.org</li>
+</ul>
+<p>额外说明一点，注册和配置完成后，本地要么装好 git ，要么装好 bitbucket 官方推荐的 <a href="https://www.sourcetreeapp.com/">SourceTree</a> 。如果不知道选哪个，那就选后者吧，好歹有个比较直观的图形界面……</p>
+<p>git 的使用要展开又是一个大坑，但是好在建 Blog 只需要用到 add 跟 commit 等这几个简单操作，死记硬背下来都行……</p>
+<p>git的详细用法可以参考：<a href="https://git-scm.com/book/zh/v2">Git中文教程</a></p>
+<h3 id="22-本地建-hugo-目录">2.2 本地建 hugo 目录</h3>
+<p>Hugo官方主页：<a href="https://gohugo.io/">gohugo.io</a></p>
+<p>直接上去找最新版下载就行，注意操作系统。打算在 linux 下玩这个的肯定不会需要看这种幼儿园水平的教程，以下以 windows 进行说明：</p>
+<p>下载最新版后解压缩，里面应该是三个文件，一个exe，两个md。</p>
+<pre><code>hugo_0.15_windows_amd64.exe
+LICENSE.md
+README.md
+</code></pre>
+<p>真正有用的就那个exe文件，复制了改名成 hugo.exe 会用起来方便点。</p>
+<p>具体使用不复杂，先放个中文手册： <a href="http://www.zimustudio.com/hugo.html">hugo中文手册</a></p>
+<p>生成网站目录（myblog文件夹必须不存在或者为空，否则生成失败）：</p>
+<pre><code>$ hugo new site myblog
+</code></pre>
+<p>生成后的目录结构大致是这样的：</p>
+<pre><code>  ▸ archetypes/
+  ▸ content/
+  ▸ layouts/
+  ▸ static/
+    config.toml
+</code></pre>
+<p>大致上，content目录放自己写的blog文件（Markdown格式）；static放各种静态的图片；config.toml 则是全局配置文件。</p>
+<p>具体组织结构的介绍，可以参考：<a href="http://www.zimustudio.com/hugo/hugozuzhi.html">hugo项目的结构</a></p>
+<h3 id="23-theme-模版">2.3 Theme 模版</h3>
+<p>默认安装的Hugo目录是没有任何皮肤模版的，需要自己下载。具体可以看<a href="http://themes.gohugo.io/">官方theme模版</a></p>
+<p>我选了个 <a href="http://themes.gohugo.io/hyde-y/">hyde-y</a> ， 安装、配置等等的说明都非常详细了。</p>
+<p>安装（基本上所有theme的安装都是类似的）：</p>
+<pre><code>$ cd myblog/
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/enten/hyde-y
+</code></pre>
+<h3 id="24-开始写blog">2.4 开始写blog</h3>
+<p>目录管理是有点说法的，没搞明白之前，所有的文章都按照惯例放在content/post目录下比较好。</p>
+<pre><code>$ hugo new post/first-blog.md
+</code></pre>
+<p>然后随便找个工具编辑这个 md 文件就行。一般我用 MarkdownEditor 或 Typora ， 偶尔也用 SublimeText 。当然你用记事本也行，Markdown的优势不就是随便抓个工具都能看都能改嘛。</p>
+<p>自动生成的md其实就是默认写进去一个文件头，具体可以参考： <a href="http://www.zimustudio.com/hugo/neirongwenjiantou.html">文件头</a>，略微补充几点：</p>
+<ul>
+<li>draft 那行要么删掉， 要么把默认的 true 改为 false ，否则就是草稿，不会显示出来；</li>
+<li>description 字段是摘要，如果不写。那么以后 blog 首页上会把正文打乱格式显示出来，会很丑；</li>
+<li>tags 和 categories 用于文章分类的，初期不明白可以先不管，后期熟悉了建议再补加上。</li>
+</ul>
+<h3 id="25-本地测试">2.5 本地测试</h3>
+<p>先启动本地服务来测试下效果：（如果已经在 <strong>config.toml</strong> 文件里设置了 <strong>theme=hyde-y</strong> ， 那么下面命令中的 <strong>&ndash;theme=hyde-y</strong> 可以不用加上，后面其它的命令也一样。 ）</p>
+<pre><code>hugo server --theme=hyde-y --buildDrafts --watch
+</code></pre>
+<p>然后在自己的浏览器里看下效果： <a href="http://127.0.0.1:1313">127.0.0.1:1313</a></p>
+<h2 id="3-发布">3 发布</h2>
+<p>先生成最终的静态网页</p>
+<pre><code>hugo --theme=hyde-y --baseUrl=&quot;http://myblog.bitbucket.org/&quot;
+</code></pre>
+<p>如果没有报error，那么所有静态页面都已经生成到 public 目录，将pubilc目录里所有文件 push 到 <strong>2.1节</strong> 创建的Repository的 master 分支。</p>
+<pre><code>$ cd public
+$ git init
+$ git remote add origin https://myblog@bitbucket.org/myblog/myblog.bitbucket.org.git 
+$ git add -A
+$ git commit -m &quot;first commit&quot;
+$ git push -u origin master
+</code></pre>
+<p>浏览器里访问：http://myblog.bitbucket.org/ 即可。 比如我的：<a href="http://baresi.bitbucket.org/"> http://baresi.bitbucket.org/</a></p>
+<p><strong>Over!</strong></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://baresi48.github.io/2016/05/hugo-bitbucket-blog/" title="使用 BitBucket &#43; Hugo 构建免费 Blog" target="_blank" rel="external">https://baresi48.github.io/2016/05/hugo-bitbucket-blog/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License: </strong>
+        <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/baresi48" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://baresi48.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/baresi48" target="_blank"><span class="text-dark">HuaZhen</span><small class="ml-1x">躺平的老年程序员</small></a></h3>
+        <div>愿有岁月可回首，且以深情共白头</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://baresi48.github.io/2016/05/%E5%A4%A7%E5%9B%BD%E4%B9%8B%E8%B7%AF%E5%A4%A9%E4%B8%8B%E9%A6%96%E5%AF%8C/" title="大国之路 《天下首富》"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://baresi48.github.io/2016/05/hugo-tips/"
+                    title=" Hugo Tips "><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/baresi48" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://baresi48.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2016  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+    
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://baresi48.github.io/js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="https://baresi48.github.io/js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/baresi48.github.io',
+            CONTENT_URL: 'https:\/\/baresi48.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://baresi48.github.io/js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>
