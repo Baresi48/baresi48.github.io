@@ -6,10 +6,19 @@
     <description>Recent content in Categories on 愿有岁月可回首</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Mon, 15 Jun 2020 10:20:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Dec 2021 17:11:52 +0800</lastBuildDate>
     
         <atom:link href="https://baresi48.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一个本地目录同时关联两个远程git库</title>
+      <link>https://baresi48.github.io/2021/12/%E4%B8%80%E5%AF%B9%E5%A4%9A%E5%85%B3%E8%81%94git%E5%BA%93/</link>
+      <pubDate>Mon, 27 Dec 2021 17:11:52 +0800</pubDate>
+      
+      <guid>https://baresi48.github.io/2021/12/%E4%B8%80%E5%AF%B9%E5%A4%9A%E5%85%B3%E8%81%94git%E5%BA%93/</guid>
+      <description>出于同时使用github和阿里云的需求，将一个本地目录同时关联到两个远程git库。参考命令如下： git remote add github git@github.com:xxx/git-demo.git git remote add gitee git@gitee.com:xxx/git-demo.git git remote -v git push github master git push gitee master -f</description>
+    </item>
     
     <item>
       <title>彩虹表笔记（填坑记录）</title>
@@ -180,15 +189,6 @@
       
       <guid>https://baresi48.github.io/2016/05/hugo-bitbucket-blog/</guid>
       <description>前言 先发半成品： baresi.bitbucket.org 优点 ： 免费！ 免费！免费！ 简洁的个人二级域名； 可适当冒充 Geek ； 自带版本控制，历史版本不需要像wod一样丑陋的在文件名后加 V1\</description>
-    </item>
-    
-    <item>
-      <title>大国之路 《天下首富》</title>
-      <link>https://baresi48.github.io/2016/05/%E5%A4%A7%E5%9B%BD%E4%B9%8B%E8%B7%AF%E5%A4%A9%E4%B8%8B%E9%A6%96%E5%AF%8C/</link>
-      <pubDate>Mon, 16 May 2016 10:45:45 +0800</pubDate>
-      
-      <guid>https://baresi48.github.io/2016/05/%E5%A4%A7%E5%9B%BD%E4%B9%8B%E8%B7%AF%E5%A4%A9%E4%B8%8B%E9%A6%96%E5%AF%8C/</guid>
-      <description>摘抄自《天下首富》 大国之路（中日丝绸） 第一节 功勋产业 前面的章节都是以“铁”为核心展开的。提到铁，不免想起刀光剑影，近代还会联想起坚船利炮这些</description>
     </item>
     
   </channel>
